@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <button class="burger">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="ueber_mich.html">Über mich</a></li>
+                <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+                <li><a href="diplome.html">Diplome</a></li>
+                <li><a href="hobbys.html">Hobbys</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Impressum</h1>
+    <p>Thierry Andres</p>
+    <p>Roggwil BE, Schweiz</p>
+    <p>Email: <a href="mailto:thierry.andres@quickline.ch">thierry.andres@quickline.ch</a></p>
+    <p>Text Teilweise ChatGPT und Eigenwerk</p>
+    <p>Bilder sind Eigenwerk ausser:</p>
+    <a href="https://pt.vecteezy.com/png-gratis/instagram-logo">Instagram</a>
+    <a href="https://www.vhv.rs/viewpic/TibRbJm_round-facebook-logo-transparent-hd-png-download/H">Facebook</a>
+    <a href="https://pt.vecteezy.com/png-gratis/linkedin">LinkedIn</a>
+    <a href="https://emojikopieren.de/">Emojis</a>
+</main>
+
+<footer>
+    <p>©2025 Thierry Andres. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav ul');
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        burger.textContent = nav.classList.contains('active') ? '✖' : '☰';
+    });
+</script>
+</body>
+</html>

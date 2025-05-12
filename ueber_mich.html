@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <button class="burger">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="ueber_mich.html">Über mich</a></li>
+                <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+                <li><a href="diplome.html">Diplome</a></li>
+                <li><a href="hobbys.html">Hobbys</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Über mich</h1>
+    <p>Hallo, ich bin Thierry Andres, 16 Jahre alt und lebe in Roggwil BE 📍. Ich mache eine Ausbildung als Informatiker Applikationsentwicklung bei Bystronic. Technik begeistert mich, und ich liebe es, kreative Lösungen zu finden.
+
+        Ich bin sportlich, humorvoll und immer offen für Neues. Herausforderungen nehme ich mit Spass und Energie an – mit mir wird es nie langweilig! 😃</p>
+    <img src="img/Andres_Thierry_Portrait.jpg" alt="Portrait Thierry Andres" width="400" height="600">
+</main>
+
+<footer>
+    <p>©2025 Thierry Andres. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav ul');
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        burger.textContent = nav.classList.contains('active') ? '✖' : '☰';
+    });
+</script>
+</body>
+</html>

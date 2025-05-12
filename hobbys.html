@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbys</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <button class="burger">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="ueber_mich.html">Über mich</a></li>
+                <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+                <li><a href="diplome.html">Diplome</a></li>
+                <li><a href="hobbys.html">Hobbys</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Hobbys</h1>
+    <ul>
+        <li>🏍 Motorradfahren</li>
+        <li>Die Freiheit der Strasse und die Faszination für Technik machen jede Tour für mich zum Erlebnis.</li>
+        <li>🎾 Tennis</li>
+        <li>Ein dynamischer Sport, der Technik, Taktik und Ausdauer fordert – perfekt, um mich herauszufordern.</li>
+        <li>🧗‍♂️ Klettern</li>
+        <li>Kraft, Präzision und Strategie – beim Klettern reizt mich die Herausforderung, neue Höhen zu erreichen.</li>
+    </ul>
+    <img src="img/Motorradfahren-Bei-Sonnenuntergang.jpeg" alt="Motorradfahren bei Sonnenuntergang" width="400" height="300">
+</main>
+
+<footer>
+    <p>©2025 Thierry Andres. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav ul');
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        burger.textContent = nav.classList.contains('active') ? '✖' : '☰';
+    });
+</script>
+</body>
+</html>

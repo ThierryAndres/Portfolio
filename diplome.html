@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diplome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <button class="burger">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="ueber_mich.html">Über mich</a></li>
+                <li><a href="faehigkeiten.html">Fähigkeiten</a></li>
+                <li><a href="diplome.html">Diplome</a></li>
+                <li><a href="hobbys.html">Hobbys</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <h1>Diplome📝</h1>
+    <ul>
+        <li>Theorieprüfung Auto – Bestanden, Jahr 2024</li>
+        <li>Traktorprüfung G40 - Bestanden, Jahr 2023</li>
+        <li>Sekundarschulabschluss – Thierry Andres 2024</li>
+        <li>Drohnenprüfung – Zertifikat für Drohnenführung</li>
+        <li>Informatiker EFZ (Applikationsentwicklung) – In Ausbildung bei Bystronic, seit 2024</li>
+
+    </ul>
+</main>
+
+<footer>
+    <p>© 2025 Thierry Andres. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('nav ul');
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        burger.textContent = nav.classList.contains('active') ? '✖' : '☰';
+    });
+</script>
+</body>
+</html>
